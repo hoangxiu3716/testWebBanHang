@@ -14,10 +14,31 @@
             <img src="/giaoDien/images/logo.png">
         </div>
         <div class="menu">
-            <li><a href="">GIỚI THIỆU</a></li>
+            <li><a href="">HOT</a>
+                <ul class="sub-menu">
+                    <li><a href="">Hàng mới nhập</a>
+                        <ul>
+                            <li><a href="">Bánh sữa chua</a></li>
+                            <li><a href="">Bánh đậu xanh</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Hàng tươi</a>
+                        <ul>
+                            <li><a href="">Thịt bò</a></li>
+                            <li><a href="">Thịt gà</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Hàng đóng gói</a>
+                        <ul>
+                            <li><a href="">Sữa chua</a></li>
+                            <li><a href="">Sữa tươi</a></li>
+                            <li><a href="">Bánh sữa</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
             <li><a href="">MẶT HÀNG</a></li>
-            <li><a href="">HOT</a></li>
-
+            <li><a href="">GIỚI THIỆU</a></li>
         </div>
         <div class="others">
             <li><input placeholder="Tìm kiếm" type="text"><i class="fas fa-search"></i></li>
@@ -26,5 +47,50 @@
             <li> <a class="fa fa-shopping-bag" href=""></a></li>
         </div>
     </header>
+    <section id="slider">
+        <div class="aspect-ratio-169">
+            <img src="/giaoDien/images/slide_1.jpg">
+            <img src="/giaoDien/images/slide_2.jpg">
+            <img src="/giaoDien/images/slide_3.jpg">
+            <img src="/giaoDien/images/slide_4.jpg">
+            <img src="/giaoDien/images/slide_5.jpg">
+        </div>
+        <div class="dot-container">
+            <div class="dot active"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+    </section>
 </body>
+<script>
+const imgPosition = document.querySelectorAll(".aspect-ratio-169 img")
+// console.log(imgPosition)
+const imgContainer = document.querySelector('.aspect-ratio-169')
+const dotItem = document.querySelectorAll(".dot")
+let imgNumber = imgPosition.length
+let index = 0
+imgPosition.forEach(function(image, index) {
+    image.style.left = index * 100 + "%"
+    dotItem[index].addEventListener("click",function() {
+        slider(index)
+    })
+})
+function imgSlide () {
+    index++;
+    if (index >= imgNumber) {
+        index = 0
+    }
+    slider(index)
+    
+}
+function slider(index) {
+    imgContainer.style.left = "-" +index * 100 + "%"
+    const dotActive = document.querySelector('.active')
+    dotActive.classList.remove("active")
+    dotItem[index].classList.add("active")
+}
+setInterval(imgSlide, 5000)
+</script>
 </html>
