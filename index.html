@@ -5,30 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <link rel="stylesheet" href="/style/main.css">
+    <link rel="stylesheet" href="/css/main.css">
     <title>Moc Project</title>
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="/giaoDien/images/logo.png">
+            <a href="/index.html">
+                <img src="/images/logo.png">
+            </a>
         </div>
         <div class="menu">
             <li><a href="">HOT</a>
                 <ul class="sub-menu">
-                    <li><a href="">Hàng mới nhập</a>
+                    <li><a class="sub-title" href="">Hàng mới nhập</a>
                         <ul>
                             <li><a href="">Bánh sữa chua</a></li>
                             <li><a href="">Bánh đậu xanh</a></li>
                         </ul>
                     </li>
-                    <li><a href="">Hàng tươi</a>
+                    <li><a class="sub-title" href="">Hàng tươi</a>
                         <ul>
                             <li><a href="">Thịt bò</a></li>
                             <li><a href="">Thịt gà</a></li>
                         </ul>
                     </li>
-                    <li><a href="">Hàng đóng gói</a>
+                    <li><a class="sub-title" href="">Hàng đóng gói</a>
                         <ul>
                             <li><a href="">Sữa chua</a></li>
                             <li><a href="">Sữa tươi</a></li>
@@ -37,7 +39,7 @@
                     </li>
                 </ul>
             </li>
-            <li><a href="">MẶT HÀNG</a></li>
+            <li><a href="/category.html">MẶT HÀNG</a></li>
             <li><a href="">GIỚI THIỆU</a></li>
         </div>
         <div class="others">
@@ -47,13 +49,14 @@
             <li> <a class="fa fa-shopping-bag" href=""></a></li>
         </div>
     </header>
+    <!-- --------------------------------------- SLIDER --------------------------------------- -->
     <section id="slider">
         <div class="aspect-ratio-169">
-            <img src="/giaoDien/images/slide_1.jpg">
-            <img src="/giaoDien/images/slide_2.jpg">
-            <img src="/giaoDien/images/slide_3.jpg">
-            <img src="/giaoDien/images/slide_4.jpg">
-            <img src="/giaoDien/images/slide_5.jpg">
+            <img src="/images/slide_1.jpg">
+            <img src="/images/slide_2.jpg">
+            <img src="/images/slide_3.jpg">
+            <img src="/images/slide_4.jpg">
+            <img src="/images/slide_5.jpg">
         </div>
         <div class="dot-container">
             <div class="dot active"></div>
@@ -63,34 +66,36 @@
             <div class="dot"></div>
         </div>
     </section>
+     <!-- app-container -->
+    <section class="app-container">
+        <p>Tải ứng dụng XXX</p>
+        <div class="app-google">
+            <img src="/images/appstore.png">
+            <img src="/images/chplay.png">
+        </div>
+        <p>Nhận bản tin Moc Fresh</p>
+        <input type="text" placeholder="Nhập email của bạn">
+    </section>
+    <!-- footer -->
+    <footer>
+    <div class="footer-top">
+        <li><a href=""><img src="/images/bocongthuong.jpg" alt=""></a></li>
+        <li><a href="">Liên hệ</a></li>
+        <li><a href="">Tuyển dụng</a></li>
+        <li><a href="">Giới thiệu</a></li>
+        <li>
+            <a href="" class="fab fa-facebook"></a>
+            <a href="" class="fab fa-twitter"></a>
+            <a href="" class="fab fa-youtube"></a>
+        </li>
+    </div>
+    <p>Địa chỉ: số 39 ngõ 171 Nguyễn Ngọc Vũ P.Trung Hòa, Q.Cầu Giấy, TP.Hà Nội - 0848830588 <br>
+        Đặt hàng online : <b>0868770599</b>
+    </p>
+    <div class="footer-bottom">
+        @Mocfresh All rights resesrved
+    </div>
+</footer>
 </body>
-<script>
-const imgPosition = document.querySelectorAll(".aspect-ratio-169 img")
-// console.log(imgPosition)
-const imgContainer = document.querySelector('.aspect-ratio-169')
-const dotItem = document.querySelectorAll(".dot")
-let imgNumber = imgPosition.length
-let index = 0
-imgPosition.forEach(function(image, index) {
-    image.style.left = index * 100 + "%"
-    dotItem[index].addEventListener("click",function() {
-        slider(index)
-    })
-})
-function imgSlide () {
-    index++;
-    if (index >= imgNumber) {
-        index = 0
-    }
-    slider(index)
-    
-}
-function slider(index) {
-    imgContainer.style.left = "-" +index * 100 + "%"
-    const dotActive = document.querySelector('.active')
-    dotActive.classList.remove("active")
-    dotItem[index].classList.add("active")
-}
-setInterval(imgSlide, 5000)
-</script>
+<script src="/js/index.js"></script>
 </html>
