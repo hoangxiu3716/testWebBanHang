@@ -36,3 +36,10 @@ function slider(index) {
     dotItem[index].classList.add("active")
 }
 setInterval(imgSlide, 5000)
+//----- Menu-SLIDEBAR-CATEGORY----------
+const itemSliderBar = document.querySelectorAll(".category-left-li")
+itemSliderBar.forEach(function(menu, index) {
+    menu.addEventListener("click",function() {
+        menu.classList.toggle("block")
+    })
+})
