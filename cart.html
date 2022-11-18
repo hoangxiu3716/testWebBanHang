@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+
+    <!-- header -->
+    <header>
+        <div class="logo">
+            <a href="/index.html">
+                <img src="/images/logo.png">
+            </a>
+        </div>
+        <div class="menu">
+            <li><a href="">HOT</a>
+                <ul class="sub-menu">
+                    <li><a class="sub-title" href="">Hàng mới nhập</a>
+                        <ul>
+                            <li><a href="">Bánh sữa chua</a></li>
+                            <li><a href="">Bánh đậu xanh</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="sub-title" href="">Hàng tươi</a>
+                        <ul>
+                            <li><a href="">Thịt bò</a></li>
+                            <li><a href="">Thịt gà</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="sub-title" href="">Hàng đóng gói</a>
+                        <ul>
+                            <li><a href="">Sữa chua</a></li>
+                            <li><a href="">Sữa tươi</a></li>
+                            <li><a href="">Bánh sữa</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="/category.html">MẶT HÀNG</a></li>
+            <li><a href="">GIỚI THIỆU</a></li>
+        </div>
+        <div class="others">
+            <li><input placeholder="Tìm kiếm" type="text"><i class="fas fa-search"></i></li>
+            <li> <a class="fa fa-paw" href=""></a></li>
+            <li> <a class="fa fa-user" href=""></a></li>
+            <li> <a class="fa fa-shopping-bag" href=""></a></li>
+        </div>
+    </header> 
+    <!-- CART -->
+    <section class="cart">
+        <div class="container">
+            <div class="cart-top-wrap">
+                <div class="cart-top">
+                    <div class="cart-top-cart cart-top-item">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                    <div class="cart-top-address cart-top-item">
+                        <i class="fa-sharp fa-solid fa-location-dot"></i>
+                    </div>
+                    <div class="cart-top-payment cart-top-item">
+                        <i class="fa-regular fa-credit-card"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="cart-content row">
+                <div class="cart-content-left">
+                    <table>
+                        <tr>
+                            <th>Sản phẩm</th>
+                            <th>Tên sản phẩm</th>
+                            <th>Loại</th>
+                            <th>Size</th>
+                            <th>SL</th>
+                            <th>Thành tiền</th>
+                            <th>Xóa</th>
+                        </tr>
+                        <tr>
+                            <td><img src="/images/sp1.1.jpg" alt=""></td>
+                            <td><p>Dâu tây</p></td>
+                            <td><img class="typeImage"src="/images/sp1.jpg" alt=""></td>
+                            <td><p>L</p></td>
+                            <td><input type="number" value="1" min="1"></td>
+                            <td><p>199.000 <sup>đ</sup></p></td>
+                            <td><span>X</span></td>
+                            <!-- https://youtu.be/zUVbKfHgA40?list=PLPNLZmPSwSkc0jZwYBIxHjACQrq16lJQe&t=2451 -->
+                        </tr>
+                    </table>
+                </div>
+                <div class="cart-content-right">
+                    <table>
+                        <tr>
+                            <th colspan="2">Tổng tiền giỏ hàng</th>
+                        </tr>
+                        <tr>
+                            <td>Tổng sẩn phẩm</td>
+                            <td>Số lượng</td>
+                        </tr>
+                        <tr>
+                            <td>Tổng tiền hàng</td>
+                            <td><p>199.000 <sup>đ</sup></p></td>
+                        </tr>
+                        <tr>
+                            <td>Tạm tính</td>
+                            <td><p style="color: black; font-weight: bold;">489.000 <sup>đ</sup></p></td>
+                        </tr>
+                    </table>
+                    <div class="cart-content-right-text">
+                        <p>Bạn sẽ được miễn phí ship đơn hàng của bạn có tổng giá trị trên 2.000.000 đ</p>
+                        <p style="color: red; font-weight: bold;">Mua thêm <span style="font-size: 18px;">131.999đ</span> để được miễn phí SHIP</p>
+                    </div>
+                    <div class="cart-content-right-button">
+                        <button>Tiếp tục mua sắp</button>
+                        <button>Thanh toán</button>
+                    </div>
+                    <div class="cart-content-right-signIn">
+                        <p>Tài khoản</p>
+                        <p>Hãy <a href="#">Đăng nhập</a> tài khoản của bạn ddeeer tích điểm</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FOOTER -->
+    <section class="app-container">
+        <p>Tải ứng dụng XXX</p>
+        <div class="app-google">
+            <img src="/images/appstore.png">
+            <img src="/images/chplay.png">
+        </div>
+        <p>Nhận bản tin Moc Fresh</p>
+        <input type="text" placeholder="Nhập email của bạn">
+    </section>
+    <footer>
+    <div class="footer-top">
+        <li><a href=""><img src="/images/bocongthuong.jpg" alt=""></a></li>
+        <li><a href="">Liên hệ</a></li>
+        <li><a href="">Tuyển dụng</a></li>
+        <li><a href="">Giới thiệu</a></li>
+        <li>
+            <a href="" class="fab fa-facebook"></a>
+            <a href="" class="fab fa-twitter"></a>
+            <a href="" class="fab fa-youtube"></a>
+        </li>
+    </div>
+    <p>Địa chỉ: số 39 ngõ 171 Nguyễn Ngọc Vũ P.Trung Hòa, Q.Cầu Giấy, TP.Hà Nội - 0848830588 <br>
+        Đặt hàng online : <b>0868770599</b>
+    </p>
+    <div class="footer-bottom">
+        @Mocfresh All rights resesrved
+    </div>
+</footer>
+</body>
+<script src="/js/index.js"></script>
+</html>
