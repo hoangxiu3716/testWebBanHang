@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+
+    <!-- header -->
+    <header>
+        <div class="logo">
+            <a href="/index.html">
+                <img src="/images/logo.png">
+            </a>
+        </div>
+        <div class="menu">
+            <li><a href="">HOT</a>
+                <ul class="sub-menu">
+                    <li><a class="sub-title" href="">Hàng mới nhập</a>
+                        <ul>
+                            <li><a href="">Bánh sữa chua</a></li>
+                            <li><a href="">Bánh đậu xanh</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="sub-title" href="">Hàng tươi</a>
+                        <ul>
+                            <li><a href="">Thịt bò</a></li>
+                            <li><a href="">Thịt gà</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="sub-title" href="">Hàng đóng gói</a>
+                        <ul>
+                            <li><a href="">Sữa chua</a></li>
+                            <li><a href="">Sữa tươi</a></li>
+                            <li><a href="">Bánh sữa</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="/category.html">MẶT HÀNG</a></li>
+            <li><a href="">GIỚI THIỆU</a></li>
+        </div>
+        <div class="others">
+            <li><input placeholder="Tìm kiếm" type="text"><i class="fas fa-search"></i></li>
+            <li> <a class="fa fa-paw" href=""></a></li>
+            <li> <a class="fa fa-user" href=""></a></li>
+            <li> <a class="fa fa-shopping-bag" href=""></a></li>
+        </div>
+    </header> 
+    <!-- DELIVERY -->
+
+    <section class="delivery">
+        <div class="container">
+            <div class="delivery-top-wrap">
+                <div class="delivery-top">
+                    <div class="delivery-top-delivery delivery-top-item">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                    <div class="delivery-top-address delivery-top-item">
+                        <i class="fa-sharp fa-solid fa-location-dot"></i>
+                    </div>
+                    <div class="delivery-top-payment delivery-top-item">
+                        <i class="fa-regular fa-credit-card"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="delivery-content row">
+                <div class="delivery-content-left">
+                    <p>Vui lòng chọn địa chỉ giao hàng</p>
+                    <div class="delivery-content-left-signIn row">
+                        <i class="fa-solid fa-right-to-bracket"></i>
+                        <p>Đăng nhập (Nếu bạn đã có tài khoản)</p>
+                    </div>
+                    <div class="delivery-content-left-khachle row">
+                        <input checked type="radio" name="loaiKhach">
+                        <p><span style="font-weight: bold;">Khách lẻ</span> (Nếu bạn không muốn lưu lại thông tin)</p>
+                    </div>
+                    <div class="delivery-content-left-signUp row">
+                        <input type="radio" name="loaiKhach" >
+                        <p><span style="font-weight: bold;">Đăng ký</span> (Tạo mới tài khoản với thông tin bên dưới)</p>
+                    </div>
+                    <div class="delivery-content-left-input-top row">
+                        <div class="delivery-content-left-input-top-item">
+                            <label for="">Họ và tên <span style="color: red;">*</span></label>
+                            <input type="text">
+                        </div>
+                        <div class="delivery-content-left-input-top-item">
+                            <label for="">Điện thoại <span style="color: red;">*</span></label>
+                            <input type="text">
+                        </div>
+                        <div class="delivery-content-left-input-top-item">
+                            <label for="">Tỉnh/TP <span style="color: red;">*</span></label>
+                            <input type="text">
+                        </div>
+                        <div class="delivery-content-left-input-top-item">
+                            <label for="">Quận/Huyện <span style="color: red;">*</span></label>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="delivery-content-left-input-bottom">
+                        <label for="">Địa chỉ <span style="color: red;">*</span></label>
+                            <input type="text">
+                    </div>
+                    <div class="delivery-content-left-button row">
+                        <a href="#"><span>&#60;&#60;</span> <p>Quay lại giỏ hàng</p></a>
+                        <button><p style="font-weight: bold;">THANH TOÁN VÀ GIAO HÀNG</p></button>
+                    </div>
+                </div>
+                <div class="delivery-content-right">
+                    <table>
+                        <tr>
+                            <th>Tên sản phẩm</th>
+                            <th>Giảm giá</th>
+                            <th>Số lượng</th>
+                            <th>Thành tiền</th>
+                        </tr>
+                        <tr>
+                            <td>Dâu tây</td>
+                            <td>-30%</td>
+                            <td>01</td>
+                            <td><p>590.000 <sup>đ</sup></p></td>
+                        </tr>
+                        <tr>
+                            <td>Sữa tươi</td>
+                            <td>-10%</td>
+                            <td>01</td>
+                            <td><p>390.000 <sup>đ</sup></p></td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: bold;" colspan="3">Tổng</td>
+                            <td style="font-weight: bold;"><p>960.000 <sup>đ</sup></p></td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: bold;" colspan="3">Thuế VAT</td>
+                            <td style="font-weight: bold;"><p>100.000 <sup>đ</sup></p></td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: bold;" colspan="3">Tổng tiền hàng</td>
+                            <td style="font-weight: bold;"><p>1.060.000 <sup>đ</sup></p></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <section class="app-container">
+        <p>Tải ứng dụng XXX</p>
+        <div class="app-google">
+            <img src="/images/appstore.png">
+            <img src="/images/chplay.png">
+        </div>
+        <p>Nhận bản tin Moc Fresh</p>
+        <input type="text" placeholder="Nhập email của bạn">
+    </section>
+    <footer>
+    <div class="footer-top">
+        <li><a href=""><img src="/images/bocongthuong.jpg" alt=""></a></li>
+        <li><a href="">Liên hệ</a></li>
+        <li><a href="">Tuyển dụng</a></li>
+        <li><a href="">Giới thiệu</a></li>
+        <li>
+            <a href="" class="fab fa-facebook"></a>
+            <a href="" class="fab fa-twitter"></a>
+            <a href="" class="fab fa-youtube"></a>
+        </li>
+    </div>
+    <p>Địa chỉ: số 39 ngõ 171 Nguyễn Ngọc Vũ P.Trung Hòa, Q.Cầu Giấy, TP.Hà Nội - 0848830588 <br>
+        Đặt hàng online : <b>0868770599</b>
+    </p>
+    <div class="footer-bottom">
+        @Mocfresh All rights resesrved
+    </div>
+</footer>
+</body>
+<script src="/js/index.js"></script>
+</html>
